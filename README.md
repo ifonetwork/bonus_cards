@@ -2,14 +2,17 @@ Bonus cards system, based on Yii 2
 ============================
 
 The application includes the admin panel to manage and code generation, and also a simple api controller to get the data in json/xml format.
-~~~
-DEMO: http://bonuscards.byethost18.com/
-API : http://bonuscards.byethost18.com/web/index.php/api 
-Panel: http://localhost/cards/web/
+
+INFo
+---
+
+**DEMO** [http://bonuscards.byethost18.com/](http://bonuscards.byethost18.com/)
+**API** : [http://bonuscards.byethost18.com/web/index.php/api](http://bonuscards.byethost18.com/web/index.php/api) 
+
 Based on Yii2  ActiveController. 
 
 You can remove  web and index.php  by .htacces or nginx.conf
-~~~
+
 INSTALLATION
 ------------
 
