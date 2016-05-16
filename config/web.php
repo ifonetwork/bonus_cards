@@ -48,6 +48,21 @@ $config = [
             ],
         ],
         */
+		
+		     'urlManager' => [
+            
+            'enablePrettyUrl' => true,
+            'enableStrictParsing' => FALSE,
+            'showScriptName' => true,
+            'rules' => [
+               ['class' => 'yii\rest\UrlRule', 'controller' => 'api',
+                   'except' => ['DELETE','PUT','POST'],
+                   ],
+            ],
+        ], 
+		
+		
+		
     ],
     'params' => $params,
 ];
