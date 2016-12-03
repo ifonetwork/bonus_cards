@@ -21,7 +21,7 @@ $config = [
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => 'cards/error',
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
@@ -40,24 +40,19 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
-        */
+
 		
 		     'urlManager' => [
-            
+                 'baseUrl' => '',
             'enablePrettyUrl' => true,
             'enableStrictParsing' => FALSE,
-            'showScriptName' => true,
+            'showScriptName' => false,
             'rules' => [
+                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
                ['class' => 'yii\rest\UrlRule', 'controller' => 'api',
                    'except' => ['DELETE','PUT','POST'],
                    ],
+
             ],
         ], 
 		

@@ -19,8 +19,8 @@ class GenerateForm extends Model
         return [
             // username and password are both required
             [['quantity', 'expiration_date','bonus'], 'required'],
-			[['quantity','bonus'], 'integer', 'max' => 1000],
-			[['sn_size'], 'integer', 'max' => 5],
+			[['quantity','bonus'], 'integer', 'max' => 100, 'min'=>1],
+			[['sn_size'], 'integer', 'max' => 5,'min'=>1],
 			['sn_size', 'default', 'value' => '2'],
  
            

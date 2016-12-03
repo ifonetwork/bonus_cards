@@ -34,7 +34,7 @@ class Cards extends \yii\db\ActiveRecord
         return [
             [['series', 'number', 'time_generated', 'expiration_date','bonus'], 'required'],
             [['number', 'used', 'active','bonus'], 'integer'],
-            [['time_generated', 'time_used', 'expiration_date'], 'safe'],
+            [[ 'time_used' ], 'safe'],
             [['series'], 'string', 'max' => 5],
         ];
     }
